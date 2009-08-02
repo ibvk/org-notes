@@ -1,0 +1,85 @@
+
+/* http://www.fonts.info/info/press/free-fonts-for-font-face-embedding.htm */
+@font-face {
+    font-family: "Graublau Web";
+    src: url(GraublauWeb.otf);
+}
+@font-face {
+    font-family: "Graublau Web";
+    src: url(GraublauWebBold.otf);
+    font-family: bold;
+}
+
+/* http://new.myfonts.com/fonts/sentinel/pykes-peak/ */
+@font-face {
+    font-family: "Pykes Peak";
+    src: url(pykes_peak_zero.otf);
+}
+
+/* http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&item_id=andika */
+@font-face {
+    font-family: Andika;
+    src: url(AndBasR.ttf);
+}
+
+
+/* google for inconsolata */
+@font-face {
+    font-family: Inconsolata;
+    src: url(Inconsolata.otf);
+}
+
+/*
+
+ Sans Bold Heading: Graublau Web
+ Sans text:         Andika
+ Sans heavy title:  Graublau Web Bold
+
+ Monospace:    Inconsolata
+ Any footnote: Pykes Peak
+
+*/
+
+/* colors, style, etc. are from daringfireball.net */
+body {
+    width: 800px;
+    margin: auto;
+
+    color: #fff;
+    background-color: #4a525a;
+
+    font-size: 12pt;
+    font-family: Andika, Verdana;
+}
+
+pre {
+    width: 80%;
+    margin: auto;
+    padding: 1em;
+
+    font-family: Inconsolata, 'Courier New';
+
+    border-width: 1px 0 1px 0;
+    border-color: #6b6b6b;
+    border-style: dashed;
+}
+
+code { font-family: Inconsolata, 'Courier New'; }
+
+h1 { font-size: 20pt; font-family: "Graublau Web", "Trebuchet MS"; }
+h2 { font-size: 16pt; font-family: "Graublau Web", "Trebuchet MS"; }
+h3 { font-size: 12pt; font-family: "Graublau Web", "Trebuchet MS"; }
+
+.title {
+    text-align: center;
+    padding: 2em;
+}
+
+#postamble {
+    font-size: 10pt;
+    font-family: "Pykes Peak", Times;
+
+    text-align: center;
+    margin: auto;
+    padding: 5em;
+}
