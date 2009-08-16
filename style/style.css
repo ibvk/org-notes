@@ -22,23 +22,11 @@
     src: url(AndBasR.ttf);
 }
 
-
 /* google for inconsolata */
 @font-face {
     font-family: Inconsolata;
     src: url(Inconsolata.otf);
 }
-
-/*
-
- Sans Bold Heading: Graublau Web
- Sans text:         Andika
- Sans heavy title:  Graublau Web Bold
-
- Monospace:    Inconsolata
- Any footnote: Pykes Peak
-
-*/
 
 /* colors, style, etc. are from daringfireball.net */
 body {
@@ -70,16 +58,26 @@ h1 { font-size: 20pt; font-family: "Graublau Web", "Trebuchet MS"; }
 h2 { font-size: 16pt; font-family: "Graublau Web", "Trebuchet MS"; }
 h3 { font-size: 12pt; font-family: "Graublau Web", "Trebuchet MS"; }
 
-.title {
-    text-align: center;
-    padding: 2em;
-}
+.title { text-align: center; padding: 2em; }
 
-#postamble {
+.section-number-1 { padding-right: 1em; }
+.section-number-2 { padding-right: 1em; }
+.section-number-3 { padding-right: 1em; }
+.section-number-4 { padding-right: 1em; }
+.section-number-5 { padding-right: 1em; }
+
+#postamble { padding: 5em; }
+
+#postamble p {
     font-size: 10pt;
     font-family: "Pykes Peak", Times;
 
     text-align: center;
     margin: auto;
-    padding: 5em;
+    padding: 0;
 }
+
+a:link {color:#FF0000}      /* unvisited link */
+a:visited {color:#00FF00}  /* visited link */
+a:hover {color:#FF00FF}  /* mouse over link */
+a:active {color:#0000FF}  /* selected link */

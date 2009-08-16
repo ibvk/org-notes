@@ -1,0 +1,23 @@
+Notes on using GNU Mailutils
+
+* Working with GMail
+
+There is a small problem with using GNU Mailutils with GMail.  GMail
+servers (pop or imap) needs =@= character as part of the user name,
+but GNU Mailutils uses =@= character to separate username and password
+fields from server name.  So in a mailbox pattern like,
+
+=imaps://username@gmail.com:password@imap.gmail.com/INBOX=
+
+imap server name is parsed incorrectly as =gmail.com= instead of
+correct =imap.gmail.com=.
+
+
+This problem can be solved using =%40= in place of =@= character,
+which is simply an ASCII equivalent representation in hex.  So above
+mailbox pattern can be correctly specified as:
+
+=imaps://username%40gmail.com:password@imap.gmail.com/INBOX=
+
+Same applies to POP mailbox pattern too.
+
